@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Compare top travel insurance providers and find coverage that fits your next trip.">
+<title>Best Travel Insurance Companies 2026</title>
+<style>
+:root{
+  --blue:#1764c0;
+  --blue-dark:#1254a5;
+  --sky:#79a8dc;
+  --purple:#5423d4;
+  --purple-dark:#4820b8;
+  --orange:#ff873d;
+  --ink:#182433;
+  --muted:#596575;
+  --line:#dce2e9;
+  --soft:#f6f8fb;
+  --green:#c8f7dc;
+  --white:#fff;
+  --shadow:0 3px 14px rgba(23,42,68,.12);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  color:var(--ink);
+  background:#f7f9fc;
+  line-height:1.5;
+}
+a{color:inherit;text-decoration:none}
+.container{width:min(1180px,calc(100% - 32px));margin:auto}
+
+/* HERO */
+.hero{
+  background:linear-gradient(180deg,#7ca9dc 0%,#78a7db 72%,#f7f9fc 72%);
+  padding:42px 0 42px;
+}
+.hero-inner{position:relative}
+.hero h1{
+  margin:0;
+  color:#fff;
+  font-size:clamp(34px,5vw,54px);
+  line-height:1.08;
+  letter-spacing:-1.5px;
+  max-width:950px;
+}
+.hero p{
+  margin:18px 0 0;
+  color:#fff;
+  font-size:clamp(17px,2vw,22px);
+  max-width:1000px;
+}
+.updated{
+  display:flex;
+  align-items:center;
+  gap:9px;
+  margin-top:28px;
+  color:#fff;
+  font-size:18px;
+}
+.check-circle{
+  width:22px;height:22px;border-radius:50%;
+  display:grid;place-items:center;
+  background:#fff;color:#6f9dd1;
+  font-weight:800;font-size:14px;
+}
+.hero-art{
+  position:absolute;
+  right:0;
+  bottom:-12px;
+  font-size:72px;
+  filter:drop-shadow(0 8px 5px rgba(0,0,0,.08));
+}
+
+/* RANKINGS */
+.rankings{margin-top:-1px;padding-bottom:35px}
+.rank-card{
+  position:relative;
+  display:grid;
+  grid-template-columns:250px 1fr 210px 220px;
+  align-items:center;
+  gap:28px;
+  background:#fff;
+  border:1px solid #e2e6eb;
+  box-shadow:var(--shadow);
+  min-height:220px;
+  padding:30px 24px;
+  margin-bottom:18px;
+}
+.rank-card.featured{border:2px solid #1264c5}
+.rank-number{
+  position:absolute;
+  left:-28px;top:48px;
+  width:48px;height:48px;
+  border:1px solid #222;border-radius:50%;
+  background:#fff;
+  display:grid;place-items:center;
+  font-size:25px;
+  z-index:2;
+}
+.badge{
+  position:absolute;left:36px;top:0;
+  transform:translateY(0);
+  background:var(--orange);
+  color:#fff;
+  padding:8px 12px;
+  font-size:16px;
+}
+.brand{
+  min-height:100px;
+  display:grid;
+  place-items:center;
+  font-weight:700;
+  font-size:50px;
+  letter-spacing:-2px;
+  color:var(--purple);
+}
+.brand.img{
+  font-size:42px;
+  color:#202d61;
+}
+.brand.generali{color:#d51d19;font-size:24px;text-align:center;letter-spacing:0}
+.brand.travel{color:#1e9ac8;font-size:25px;letter-spacing:-1px}
+.brand.axa{color:#fff;background:#070795;width:160px;height:160px;margin:auto;font-size:45px;letter-spacing:-4px}
+.brand.square{color:#1680c6;font-size:39px}
+.brand.allianz{color:#064394;font-size:40px}
+.description h2{
+  margin:0 0 12px;
+  font-size:21px;
+  line-height:1.35;
+}
+.description ul{margin:0;padding:0;list-style:none}
+.description li{
+  margin:9px 0;
+  color:#3f4854;
+  font-size:17px;
+}
+.description li::before{content:"✓";margin-right:10px;color:#2d3b4d;font-weight:700}
+.score{text-align:center}
+.score-ring{
+  width:132px;height:132px;border-radius:50%;
+  margin:auto;
+  display:grid;place-items:center;
+  border:7px solid #e8ebee;
+  border-top-color:#1764c0;
+  border-right-color:#1764c0;
+}
+.score-ring strong{display:block;font-size:34px;line-height:1}
+.score-ring span{display:block;font-size:16px;font-weight:600}
+.stars{margin-top:9px;color:#ffbf36;font-size:24px;letter-spacing:1px}
+.reviews{font-size:14px;color:#555;margin-top:2px}
+.cta{
+  display:flex;
+  justify-content:center;
+}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:220px;
+  min-height:64px;
+  padding:14px 24px;
+  border-radius:3px;
+  background:#2162bf;
+  color:#fff;
+  font-size:22px;
+  font-weight:700;
+  transition:.15s ease;
+}
+.btn:hover{background:var(--blue-dark);transform:translateY(-1px)}
+.feature-note{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  margin-top:15px;
+  background:#edf3fb;
+  padding:7px 13px;
+  border-radius:20px;
+  font-size:16px;
+}
+
+/* BETWEEN-CARDS PROMO */
+.mini-promo{
+  background:#e8e5ff;
+  border:1px solid #a78be9;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  padding:12px 30px;
+  margin:-2px 0 14px;
+}
+.mini-promo .mini-brand{font-size:54px;color:var(--purple)}
+.mini-promo strong{font-size:20px}
+.mini-promo .mini-btn{
+  background:var(--orange);color:#fff;
+  padding:12px 38px;border-radius:3px;font-weight:700;font-size:18px;
+}
+
+/* DETAIL */
+.detail-section{padding:15px 0 125px}
+.detail-section h2{
+  font-size:30px;
+  margin:0 0 16px;
+}
+.detail{
+  background:#fff;
+  border:1px solid #e4e8ed;
+  box-shadow:var(--shadow);
+  padding:32px;
+}
+.detail-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:25px;
+  margin-bottom:20px;
+}
+.detail-brand{font-size:64px;color:var(--purple);letter-spacing:-4px}
+.detail-rating{text-align:right}
+.detail-rating strong{font-size:28px;color:#1764c0}
+.detail-rating .stars{margin:0;font-size:20px}
+.detail-grid{
+  display:grid;
+  grid-template-columns:minmax(0,2fr) minmax(300px,1fr);
+  gap:26px;
+}
+.metric{
+  background:#fff;
+  border:1px solid #e1e5ea;
+  border-radius:10px;
+  padding:20px;
+  margin-bottom:16px;
+}
+.metric-title{
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  align-items:center;
+  font-size:22px;
+  font-weight:700;
+}
+.metric-score{
+  background:var(--green);
+  color:#159457;
+  border-radius:6px;
+  padding:5px 9px;
+  font-size:15px;
+}
+.metric p{margin:12px 0 0;color:#637080;font-size:17px}
+.proscons{display:grid;gap:18px}
+.proscons h3{margin:0 0 12px;font-size:28px}
+.proscons ul{list-style:none;margin:0;padding:0}
+.proscons li{padding:9px 0;font-size:17px}
+.pros li::before{content:"✓";color:#2162bf;font-weight:800;margin-right:12px}
+.cons li::before{content:"×";color:#2162bf;font-weight:800;margin-right:14px;font-size:21px}
+
+/* STICKY CTA */
+.sticky{
+  position:fixed;
+  z-index:20;
+  left:0;right:0;bottom:0;
+  background:#dcdfff;
+  border-top:1px solid #b9bce8;
+  box-shadow:0 -4px 18px rgba(0,0,0,.12);
+}
+.sticky-inner{
+  width:min(1180px,calc(100% - 32px));
+  margin:auto;
+  min-height:96px;
+  display:grid;
+  grid-template-columns:220px 1fr 250px;
+  align-items:center;
+  gap:20px;
+}
+.sticky-brand{font-size:62px;color:var(--purple);letter-spacing:-4px}
+.sticky-copy{text-align:center}
+.sticky-copy strong{display:block;font-size:24px}
+.sticky-copy span{font-size:18px}
+.sticky-stars{color:var(--purple);font-size:22px;margin-left:8px}
+.sticky .btn{min-width:250px;background:var(--purple);font-size:20px}
+.close{
+  position:absolute;right:10px;top:5px;
+  font-size:28px;color:#222;
+}
+
+/* ACCESSIBILITY */
+:focus-visible{outline:3px solid #ffad33;outline-offset:3px}
+
+/* RESPONSIVE */
+@media (max-width:1050px){
+  .rank-card{grid-template-columns:190px 1fr 150px 170px;gap:18px}
+  .brand{font-size:42px}
+  .btn{min-width:170px;font-size:19px}
+  .sticky-inner{grid-template-columns:170px 1fr 210px}
+  .sticky-brand{font-size:52px}
+}
+@media (max-width:800px){
+  .hero{padding-top:30px;background:linear-gradient(180deg,#7ca9dc 0%,#78a7db 82%,#f7f9fc 82%)}
+  .hero-art{display:none}
+  .rank-card{
+    grid-template-columns:1fr;
+    text-align:left;
+    padding:45px 20px 24px;
+  }
+  .rank-number{left:-7px;top:-17px}
+  .brand{min-height:70px;justify-content:flex-start}
+  .brand.axa{margin:0;width:130px;height:130px}
+  .score{text-align:left;display:flex;align-items:center;gap:18px}
+  .score-ring{margin:0;width:105px;height:105px}
+  .cta{justify-content:flex-start}
+  .btn{width:100%}
+  .mini-promo{flex-wrap:wrap}
+  .mini-promo .mini-btn{width:100%;text-align:center}
+  .detail-grid{grid-template-columns:1fr}
+  .detail-head{align-items:flex-start}
+  .detail-rating{text-align:left}
+  .sticky-inner{
+    min-height:76px;
+    grid-template-columns:1fr 150px;
+    gap:10px;
+  }
+  .sticky-brand{display:none}
+  .sticky-copy{text-align:left}
+  .sticky-copy strong{font-size:17px}
+  .sticky-copy span{font-size:14px}
+  .sticky .btn{min-width:0;min-height:52px;font-size:17px;padding:10px}
+  .close{display:none}
+}
+@media (max-width:480px){
+  .container{width:min(100% - 20px,1180px)}
+  .hero h1{font-size:34px}
+  .hero p{font-size:16px}
+  .updated{font-size:15px}
+  .description h2{font-size:19px}
+  .description li{font-size:15px}
+  .detail{padding:18px}
+  .detail-brand{font-size:50px}
+  .metric-title{font-size:19px}
+  .metric p{font-size:15px}
+  .sticky-inner{width:calc(100% - 20px)}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="container hero-inner">
+    <h1>Best Travel Insurance Companies 2026</h1>
+    <p>Check and compare the best travel insurance companies of 2026. Find the best insurance plan for your trip, stay covered and avoid unnecessary expenses.</p>
+    <div class="updated"><span class="check-circle">✓</span> Last Updated: August 2026</div>
+    <div class="hero-art" aria-hidden="true">🧳 👒 ☕</div>
+  </div>
+</header>
+
+<main class="rankings container">
+
+  <article class="rank-card featured">
+    <span class="rank-number">1</span>
+    <span class="badge">Best for Fast Claims</span>
+    <div class="brand">Faye</div>
+    <div class="description">
+      <h2>Faye - Top Rated Travel Insurance</h2>
+      <ul>
+        <li>Option to add 'Cancel for Any Reason'</li>
+        <li>24/7 support for medical emergencies &amp; more</li>
+        <li>Access 20K doctors via telemedicine in just minutes</li>
+        <li>Quick online claims &amp; reimbursements via Faye app</li>
+        <li>Coverage for trip delays, lost baggage &amp; more</li>
+      </ul>
+      <div class="feature-note">☆ Get a Custom Quote in 60 Seconds</div>
+    </div>
+    <div class="score">
+      <div class="score-ring"><div><span>Superb</span><strong>9.8</strong></div></div>
+      <div class="stars">★★★★★</div>
+      <div class="reviews">Reviews (25,688)</div>
+    </div>
+    <div class="cta"><a class="btn" href="#faye-details">Get Quote</a></div>
+  </article>
+
+  <div class="mini-promo">
+    <div class="mini-brand">Faye</div>
+    <strong>Receive claims in your phone's wallet</strong>
+    <a class="mini-btn" href="#faye-details">Get Quote</a>
+  </div>
+
+  <article class="rank-card">
+    <span class="rank-number">2</span>
+    <div class="brand img">↗<span style="font-size:.85em"> IMG</span></div>
+    <div class="description">
+      <h2>IMG - Travel protection for cost-conscious travelers</h2>
+      <ul>
+        <li>Optional 'Cancel for Any Reason' add-on</li>
+        <li>Great for Trips Under $10,000 per person</li>
+        <li>Trip cancellation, primary medical cover</li>
+      </ul>
+    </div>
+    <div class="score">
+      <div class="score-ring"><div><span>Excellent</span><strong>8.7</strong></div></div>
+      <div class="stars">★★★★☆</div>
+      <div class="reviews">Reviews (19,685)</div>
+    </div>
+    <div class="cta"><a class="btn" href="#faye-details">Get Quote</a></div>
+  </article>
+
+  <article class="rank-card">
+    <span class="rank-number">3</span>
+    <div class="brand generali">GENERALI<br><small>GLOBAL ASSISTANCE</small></div>
+    <div class="description">
+      <h2 style="color:#2162bf">Generali - True 24/7 Global Assistance with In-House Experts</h2>
+      <ul>
+        <li>Top-rated low-cost provider</li>
+        <li>Instant quote - no email/login needed</li>
+        <li>CFAR add-on: up to 75% reimbursement</li>
+      </ul>
+    </div>
+    <div class="score">
+      <div class="score-ring"><div><span>Great</span><strong>8.4</strong></div></div>
+      <div class="stars">★★★★☆</div>
+      <div class="reviews">Reviews (15,875)</div>
+    </div>
+    <div class="cta"><a class="btn" href="#faye-details">Get Quote</a></div>
+  </article>
+
+  <article class="rank-card">
+    <span class="rank-number">4</span>
+    <div class="brand travel">◉ TravelInsurance.com</div>
+    <div class="description">
+      <h2>Travel Insurance - Compare and buy in a few minutes</h2>
+      <ul>
+        <li>Over 100,000 customers' great reviews</li>
+        <li>3 easy steps to buy + best price guarantee</li>
+        <li>Save money by comparing on one platform</li>
+      </ul>
+    </div>
+    <div class="score">
+      <div class="score-ring"><div><span>Very Good</span><strong>8.2</strong></div></div>
+      <div class="stars">★★★★☆</div>
+      <div class="reviews">Reviews (12,356)</div>
+    </div>
+    <div class="cta"><a class="btn" href="#faye-details">Get Quote</a></div>
+  </article>
+
+  <article class="rank-card">
+    <span class="rank-number">5</span>
+    <div class="brand axa">AXA</div>
+    <div class="description">
+      <h2>AXA Travel Insurance</h2>
+      <ul>
+        <li>Up to 75% reimbursement with CFAR coverage</li>
+        <li>Trip cancellation/interruption coverage up to 100%</li>
+        <li>Emergency medical &amp; evacuation coverage included</li>
+      </ul>
+    </div>
+    <div class="score">
+      <div class="score-ring"><div><span>Good</span><strong>7.9</strong></div></div>
+      <div class="stars">★★★★☆</div>
+      <div class="reviews">Reviews (9,022)</div>
+    </div>
+    <div class="cta"><a class="btn" href="#faye-details">Get Quote</a></div>
+  </article>
+
+  <article class="rank-card">
+    <span class="rank-number">6</span>
+    <div class="brand square">SquareMouth</div>
+    <div class="description">
+      <h2>Square Mouth - Compare over 90 travel insurances</h2>
+      <ul>
+        <li>Over 4 million trips insured</li>
+        <li>Largest travel insurance marketplace</li>
+        <li>Compare 20+ top-rated providers side-by-side</li>
+      </ul>
+    </div>
+    <div class="score">
+      <div class="score-ring"><div><span>Good</span><strong>7.7</strong></div></div>
+      <div class="stars">★★★★☆</div>
+      <div class="reviews">Reviews (8,865)</div>
+    </div>
+    <div class="cta"><a class="btn" href="#faye-details">Get Quote</a></div>
+  </article>
+
+  <article class="rank-card">
+    <span class="rank-number">7</span>
+    <div class="brand allianz">Allianz ◉</div>
+    <div class="description">
+      <h2>Allianz Partners - Loved by over 70 million travelers</h2>
+      <ul>
+        <li>24/7 assistance worldwide</li>
+        <li>Fast claims with TravelSmart app</li>
+        <li>World leader in travel protection</li>
+      </ul>
+    </div>
+    <div class="score">
+      <div class="score-ring"><div><span>Good</span><strong>7.5</strong></div></div>
+      <div class="stars">★★★★☆</div>
+      <div class="reviews">Reviews (7,389)</div>
+    </div>
+    <div class="cta"><a class="btn" href="#faye-details">Get Quote</a></div>
+  </article>
+
+</main>
+
+<section class="detail-section container" id="faye-details">
+  <h2>Our Top Choice for Travel Insurance</h2>
+  <div class="detail">
+    <div class="detail-head">
+      <div class="detail-brand">Faye</div>
+      <div class="detail-rating">
+        <strong>★★★★★ 9.8</strong>
+        <div class="stars">★★★★★</div>
+        <div class="reviews">(25,688 Reviews)</div>
+      </div>
+    </div>
+
+    <div class="detail-grid">
+      <div>
+        <div class="metric">
+          <div class="metric-title"><span>◉ &nbsp;Coverage</span><span class="metric-score">10</span></div>
+          <p>Covers trip cancellation, medical emergencies, and lost luggage. Includes flight delays, rental car damage, and pet care. All plans managed through Faye's easy-to-use mobile app.</p>
+        </div>
+        <div class="metric">
+          <div class="metric-title"><span>⊞ &nbsp;Add-ons</span><span class="metric-score">9.0</span></div>
+          <p>Optional coverage for adventure sports and high-value items. Add protection for trip interruption and missed connections. Customizable plans for solo or family travelers.</p>
+        </div>
+        <div class="metric">
+          <div class="metric-title"><span>♙ &nbsp;Cost</span><span class="metric-score">9.0</span></div>
+          <p>Average plans start around $5 per travel day. Transparent pricing with no hidden fees or surprises. Full refunds available if canceled before departure.</p>
+        </div>
+        <div class="metric">
+          <div class="metric-title"><span>🤝 &nbsp;Support</span><span class="metric-score">10</span></div>
+          <p>24/7 in-app support for emergencies and claims. Fast claim payouts directly through digital wallet. Excellent customer reviews for quick, friendly help.</p>
+        </div>
+        <a class="btn" href="#quote">Get Quote</a>
+      </div>
+
+      <aside class="proscons">
+        <div class="metric pros">
+          <h3>✓ Pros</h3>
+          <ul>
+            <li>Full medical and trip protection</li>
+            <li>Simple digital claim process</li>
+            <li>Customizable add-ons</li>
+            <li>Great customer support</li>
+          </ul>
+        </div>
+        <div class="metric cons">
+          <h3>× Cons</h3>
+          <ul>
+            <li>Only available for U.S. residents</li>
+            <li>Coverage limited in select regions</li>
+            <li>App required for full claim access</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<div class="sticky" id="quote">
+  <span class="close" aria-hidden="true">×</span>
+  <div class="sticky-inner">
+    <div class="sticky-brand">Faye</div>
+    <div class="sticky-copy">
+      <strong>Get Your Custom Quote in 60s or Less</strong>
+      <span>Rated 4.7/5 stars <span class="sticky-stars">★★★★</span>★</span>
+    </div>
+    <a class="btn" href="#faye-details">View Plan</a>
+  </div>
+</div>
+
+</body>
+</html>
