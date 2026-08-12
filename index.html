@@ -144,10 +144,18 @@ a{color:inherit;text-decoration:none}
   width:132px;height:132px;border-radius:50%;
   margin:auto;
   display:grid;place-items:center;
-  border:7px solid #e8ebee;
-  border-top-color:#1764c0;
-  border-right-color:#1764c0;
+  background:conic-gradient(from -90deg, #1764c0 0%, #1764c0 calc(var(--rating) * 1%), #e8ebee calc(var(--rating) * 1%), #e8ebee 100%);
+  position:relative;
+  flex:0 0 auto;
 }
+.score-ring::before{
+  content:"";
+  position:absolute;
+  inset:7px;
+  border-radius:50%;
+  background:#fff;
+}
+.score-ring > div{position:relative;z-index:1;text-align:center}
 .score-ring strong{display:block;font-size:34px;line-height:1}
 .score-ring span{display:block;font-size:16px;font-weight:600}
 .stars{margin-top:9px;color:#ffbf36;font-size:24px;letter-spacing:1px}
@@ -310,7 +318,7 @@ a{color:inherit;text-decoration:none}
   .brand{min-height:70px;justify-content:flex-start}
   .brand.axa{margin:0;width:130px;height:130px}
   .score{text-align:left;display:flex;align-items:center;gap:18px}
-  .score-ring{margin:0;width:105px;height:105px}
+  .score-ring{margin:0;width:105px;height:105px}.score-ring::before{inset:7px}
   .cta{justify-content:flex-start}
   .btn{width:100%}
   .mini-promo{flex-wrap:wrap}
@@ -374,7 +382,7 @@ a{color:inherit;text-decoration:none}
       <div class="feature-note">☆ Get a Custom Quote in 60 Seconds</div>
     </div>
     <div class="score">
-      <div class="score-ring"><div><span>Superb</span><strong>9.8</strong></div></div>
+      <div class="score-ring" style="--rating:98"><div><span>Superb</span><strong>9.8</strong></div></div>
       <div class="stars">★★★★★</div>
       <div class="reviews">Reviews (25,688)</div>
     </div>
@@ -399,7 +407,7 @@ a{color:inherit;text-decoration:none}
       </ul>
     </div>
     <div class="score">
-      <div class="score-ring"><div><span>Excellent</span><strong>8.7</strong></div></div>
+      <div class="score-ring" style="--rating:87"><div><span>Excellent</span><strong>8.7</strong></div></div>
       <div class="stars">★★★★☆</div>
       <div class="reviews">Reviews (19,685)</div>
     </div>
@@ -418,7 +426,7 @@ a{color:inherit;text-decoration:none}
       </ul>
     </div>
     <div class="score">
-      <div class="score-ring"><div><span>Great</span><strong>8.4</strong></div></div>
+      <div class="score-ring" style="--rating:84"><div><span>Great</span><strong>8.4</strong></div></div>
       <div class="stars">★★★★☆</div>
       <div class="reviews">Reviews (15,875)</div>
     </div>
@@ -437,7 +445,7 @@ a{color:inherit;text-decoration:none}
       </ul>
     </div>
     <div class="score">
-      <div class="score-ring"><div><span>Very Good</span><strong>8.2</strong></div></div>
+      <div class="score-ring" style="--rating:82"><div><span>Very Good</span><strong>8.2</strong></div></div>
       <div class="stars">★★★★☆</div>
       <div class="reviews">Reviews (12,356)</div>
     </div>
@@ -456,7 +464,7 @@ a{color:inherit;text-decoration:none}
       </ul>
     </div>
     <div class="score">
-      <div class="score-ring"><div><span>Good</span><strong>7.9</strong></div></div>
+      <div class="score-ring" style="--rating:79"><div><span>Good</span><strong>7.9</strong></div></div>
       <div class="stars">★★★★☆</div>
       <div class="reviews">Reviews (9,022)</div>
     </div>
@@ -475,7 +483,7 @@ a{color:inherit;text-decoration:none}
       </ul>
     </div>
     <div class="score">
-      <div class="score-ring"><div><span>Good</span><strong>7.7</strong></div></div>
+      <div class="score-ring" style="--rating:77"><div><span>Good</span><strong>7.7</strong></div></div>
       <div class="stars">★★★★☆</div>
       <div class="reviews">Reviews (8,865)</div>
     </div>
@@ -494,7 +502,7 @@ a{color:inherit;text-decoration:none}
       </ul>
     </div>
     <div class="score">
-      <div class="score-ring"><div><span>Good</span><strong>7.5</strong></div></div>
+      <div class="score-ring" style="--rating:75"><div><span>Good</span><strong>7.5</strong></div></div>
       <div class="stars">★★★★☆</div>
       <div class="reviews">Reviews (7,389)</div>
     </div>
